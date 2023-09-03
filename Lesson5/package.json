@@ -1,7 +1,6 @@
 {
   "name": "lesson5",
   "version": "1.0.0",
-  "description": "",
   "main": "mongodb.js",
   "scripts": {
     "dev": "node --watch -r dotenv/config mongoose.js",
@@ -16,5 +15,6 @@
   },
   "devDependencies": {
     "dotenv": "^16.3.1"
-  }
+  },
+  "description": ""
 }
