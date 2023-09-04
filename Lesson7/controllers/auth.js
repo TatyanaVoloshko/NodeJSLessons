@@ -1,5 +1,6 @@
 const bcrypt = require('bcrypt');
 
+
 const User = require('../models/user');
 
 async function register(req, res, next) {
@@ -41,6 +42,8 @@ async function login(req, res, next) {
                .status(401)
                .send({ message: "Email or password is incorrect" });
         }
+
+       
 
         return res.status(200).send({ token: "TOKEN" });
     } catch (error) {
